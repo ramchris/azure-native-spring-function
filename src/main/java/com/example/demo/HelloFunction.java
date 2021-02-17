@@ -10,7 +10,7 @@ public class HelloFunction implements Function<String, String> {
     @Override
     public String apply(String user) {
         if (user == null || "".equals(user)) {
-            user = "world";
+            user = "world ";
         }
         return "Hello from GraalVM, " + user + "!\n";
     }
